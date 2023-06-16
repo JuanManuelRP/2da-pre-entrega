@@ -1,0 +1,55 @@
+/*INICIO BODY QUE ES EL COACHING*/
+section.text-2 {
+  padding-top: 20px;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  color: white;
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    font-size: 17px;
+  }
+}
+
+section.targets-1 {
+  margin: 5rem 2rem 4rem 2rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+  article {
+    background-color: rgb(83, 81, 81);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    div.text-list {
+      color: white;
+    }
+    .button-info {
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      background-color: $boton-info;
+      border-radius: 5px;
+      border: 3px;
+      a {
+        text-decoration: none;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+}
+/*FIN BODY QUE ES EL COACHING*/

@@ -1,0 +1,33 @@
+/* INICIO BODY QUIEN SOY*/
+div.container-1 {
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #273036;
+  div {
+    width: 400px;
+    margin: 0px;
+    img.foto {
+      max-width: 80%;
+    }
+  }
+  div.container-text {
+    color: white;
+    button.button-2 {
+      margin-top: 25px;
+      border: 1px solid rgb(255, 255, 255);
+      background-color: rgb(97, 91, 91);
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 30px 40px;
+      }
+    }
+  }
+}
+/*FIN BODY QUIEN SOY*/

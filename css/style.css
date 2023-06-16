@@ -1,0 +1,318 @@
+/*VARIABLES*/ /*INICIO BODY INDEX*/
+body {
+  margin: 0px 0px 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #273036;
+}
+
+.container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-left: 35px;
+  text-align: center;
+  font-size: calc(1rem + 3vw);
+  font-weight: 700;
+  text-transform: uppercase !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div.bottom-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+}
+div.bottom-1 a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 30px 60px;
+  position: relative;
+  overflow: hidden;
+}
+div.bottom-1 a:before {
+  content: "Saber mas";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(5);
+  opacity: 0;
+}
+div.bottom-1 a:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/*FIN BODY INDEX*/
+/* INICIO BODY QUIEN SOY*/
+div.container-1 {
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #273036;
+}
+div.container-1 div {
+  width: 400px;
+  margin: 0px;
+}
+div.container-1 div img.foto {
+  max-width: 80%;
+}
+div.container-1 div.container-text {
+  color: white;
+}
+div.container-1 div.container-text button.button-2 {
+  margin-top: 25px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(97, 91, 91);
+}
+div.container-1 div.container-text button.button-2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 30px 40px;
+}
+
+/*FIN BODY QUIEN SOY*/
+/*INICIO BODY QUE ES EL COACHING*/
+section.text-2 {
+  padding-top: 20px;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  color: white;
+}
+section.text-2 h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+section.text-2 p {
+  font-size: 17px;
+}
+
+section.targets-1 {
+  margin: 5rem 2rem 4rem 2rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+}
+section.targets-1 article {
+  background-color: rgb(83, 81, 81);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+section.targets-1 article div.text-list {
+  color: white;
+}
+section.targets-1 article .button-info {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  background-color: #273641;
+  border-radius: 5px;
+  border: 3px;
+}
+section.targets-1 article .button-info a {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+/*FIN BODY QUE ES EL COACHING*/
+/*INICIO CONTACTO*/
+section.form-img {
+  display: flex;
+  align-items: center;
+}
+section.form-img div.image-pluma img {
+  max-width: 60%;
+  padding: 0px;
+}
+section.form-img div.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  width: 250px;
+  background-color: #465042;
+  padding: 30px;
+}
+section.form-img div.formulario form p.text-form {
+  color: white;
+  padding: 10px;
+  margin: 0px;
+}
+section.form-img div.formulario form button.send {
+  margin: 30px 0px 20px 70px;
+  display: flex;
+  justify-content: center;
+  background-color: #273641;
+  border-radius: 5px;
+  border: 3px;
+}
+section.form-img div.formulario form button.send a {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+section.form-img div.formulario form button.send:hover {
+  background-color: #66706a;
+  transition: 1s;
+}
+
+/*FIN CONTACTO*/
+/*INICIO CERTIFICADOS*/
+h5 {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+span.carousel-control-next-icon {
+  color: black;
+}
+
+/*FIN CERTIFICADOS*/
+/*INICIO HEADER*/
+header {
+  background: linear-gradient(to left, #aec2b6, #66706a);
+  height: 150px;
+}
+header nav.bg-toggler {
+  background: linear-gradient(to left, #aec2b6, #66706a);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav.bg-toggler ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+header nav.bg-toggler ul li:hover {
+  transform: scale(1.1);
+}
+header nav.bg-toggler ul div.number li a {
+  padding: 11px;
+  background-color: #617a55;
+  border-radius: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+header nav.bg-toggler ul div.number li a:hover {
+  background-color: #66706a;
+  transition: 0.3s;
+}
+header nav.bg-toggler ul li {
+  padding: 15px;
+}
+header nav.bg-toggler ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: bold;
+  margin-left: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+header nav.bg-toggler div a img {
+  height: 140px;
+  width: 140px;
+}
+header nav.bg-toggler div a img:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1200px) {
+  nav ul li:hover {
+    transform: scale(1);
+  }
+}
+/*FIN HEADER*/
+/*INICIO FOOTER*/
+footer {
+  background-color: #262927;
+  height: 320px;
+  padding: 20px;
+  border-top: 0.5px solid rgb(14, 13, 13);
+}
+footer section.footer ul {
+  font-weight: bolder;
+  font-size: 25px;
+  color: white;
+}
+footer section.footer ul a {
+  text-decoration: none;
+}
+footer section.footer ul a img {
+  background-color: rgb(150, 187, 150);
+  padding: 5px;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+footer section.footer ul a img:hover {
+  background-color: #66706a;
+  transition: 0.3s;
+}
+
+/*FIN FOOTER*/
+/*COSAS UTILES
+background-color: #aaaaaa;
+background: linear-gradient(to right, #aaaaaa, #5c5555);
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+        <path
+        fill="#273036"
+        fill-opacity="1"
+        d="M0,160L34.3,160C68.6,160,137,160,206,165.3C274.3,171,343,181,411,165.3C480,149,549,107,617,112C685.7,117,754,171,823,165.3C891.4,160,960,96,1029,96C1097.1,96,1166,160,1234,186.7C1302.9,213,1371,203,1406,197.3L1440,192L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+        ></path>
+    </svg>
+  */
+/*
+
+div.container-1 h2 {
+    font-size: 3rem;
+    color: white;
+    margin: 60px;
+}
+div.container-1 h2 p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-right: 5rem;
+}*/
+
+/*# sourceMappingURL=style.css.map */
