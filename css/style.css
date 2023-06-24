@@ -5,21 +5,23 @@ body {
   background-color: #273036;
 }
 
-.container h1 {
+main {
+  position: relative;
+  border-bottom: 0.5px solid rgb(14, 13, 13);
+}
+main .container h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  margin-left: 35px;
   text-align: center;
   font-size: calc(1rem + 3vw);
   font-weight: 700;
   text-transform: uppercase !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-div.bottom-1 {
+main .container div.bottom-1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,25 +30,25 @@ div.bottom-1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 25px;
 }
-div.bottom-1 a {
+main .container div.bottom-1 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 30px;
   border: 2px solid rgb(255, 255, 255);
-  padding: 30px 60px;
+  background-color: rgba(0, 0, 0, 0.356);
+  padding: 25px 50px;
   position: relative;
   overflow: hidden;
 }
-div.bottom-1 a:before {
+main .container div.bottom-1 a:before {
   content: "Saber mas";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.925);
   color: white;
   display: flex;
   justify-content: center;
@@ -54,12 +56,27 @@ div.bottom-1 a:before {
   transform: scale(5);
   opacity: 0;
 }
-div.bottom-1 a:hover:before {
+main .container div.bottom-1 a:hover:before {
   transform: scale(1);
   opacity: 1;
 }
 
-/*FIN BODY INDEX*/
+section.button-1 {
+  display: none;
+  height: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  section.button-1 {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  div.bottom-1 {
+    margin-top: 2rem;
+  }
+}
+/*FIN BODY INDEX */
 /* INICIO BODY QUIEN SOY*/
 div.container-1 {
   padding: 2rem 2rem;
@@ -103,8 +120,7 @@ section.text-2 {
 }
 section.text-2 h1 {
   text-align: center;
-  font-size: 3rem;
-  font-family: sans-serif;
+  font-size: calc(0.5rem + 3vw);
   display: flex;
   justify-content: center;
 }
@@ -155,10 +171,21 @@ section.form-img {
   align-items: center;
 }
 section.form-img div.image-pluma img {
-  max-width: 60%;
+  max-width: 70%;
   padding: 0px;
 }
-section.form-img div.formulario {
+section.form-img div.container-form h6 {
+  color: white;
+  margin: 2rem;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+section.form-img div.container-form .posicionamiento {
+  display: flex;
+  justify-content: center;
+}
+section.form-img div.container-form .posicionamiento div.formulario {
   display: flex;
   justify-content: center;
   margin: 30px;
@@ -166,12 +193,12 @@ section.form-img div.formulario {
   background-color: #465042;
   padding: 30px;
 }
-section.form-img div.formulario form p.text-form {
+section.form-img div.container-form .posicionamiento div.formulario form p.text-form {
   color: white;
   padding: 10px;
   margin: 0px;
 }
-section.form-img div.formulario form button.send {
+section.form-img div.container-form .posicionamiento div.formulario form button.send {
   margin: 30px 0px 20px 70px;
   display: flex;
   justify-content: center;
@@ -179,18 +206,23 @@ section.form-img div.formulario form button.send {
   border-radius: 5px;
   border: 3px;
 }
-section.form-img div.formulario form button.send a {
+section.form-img div.container-form .posicionamiento div.formulario form button.send a {
   text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: white;
 }
-section.form-img div.formulario form button.send:hover {
+section.form-img div.container-form .posicionamiento div.formulario form button.send:hover {
   background-color: #66706a;
   transition: 1s;
 }
 
+@media screen and (max-width: 992px) {
+  div.image-pluma img {
+    display: none;
+  }
+}
 /*FIN CONTACTO*/
 /*INICIO CERTIFICADOS*/
 h5 {
@@ -200,10 +232,6 @@ h5 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 35px;
   font-weight: 700;
-}
-
-span.carousel-control-next-icon {
-  color: black;
 }
 
 /*FIN CERTIFICADOS*/
